@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+<title> Makeup vending Machine</title>
+<script type="text/javascript">
+    function printMakeup( name){
+        
+        if(name=="Nail-Polish"){
+          
+          var  rate=50;
+          var quantity=document.getElementById("name1").value;
+
+          var total = rate*quantity;
+          document.getElementById("print1").innerHTML=total;
+        }
+
+        if(name=="foundation powder"){
+            var rate=110;
+            var quantity=document.getElementById("name2").value;
+
+            var total = rate*quantity;
+            document.getElementById("print2").innerHTML=total; 
+        }
+
+        if(name=="Lipstick"){
+            var rate=80;
+            var quantity=document.getElementById("name3").value;
+
+            var total = rate*quantity;
+            document.getElementById("print3").innerHTML=total; 
+            
+        }
+
+        if(name=="Kajal"){
+            var rate=20;
+            var quantity=document.getElementById("name4").value;
+
+            var total = rate*quantity;
+            document.getElementById("print4").innerHTML=total; 
+        }
+
+        if(name=="Eyeliner"){
+            var rate=30;
+            var quantity=document.getElementById("name5").value;
+
+            var total = rate*quantity;
+            document.getElementById("print5").innerHTML=total; 
+        }
+        
+        if(name=="Bangles"){
+            var rate=120;
+            var quantity=document.getElementById("name6").value;
+
+            var total = rate*quantity;
+            document.getElementById("print6").innerHTML=total; 
+        }
+
+        if(name=="Necklace"){
+            var rate=200;
+            var quantity=document.getElementById("name7").value;
+
+            var total = rate*quantity;
+            document.getElementById("print7").innerHTML=total; 
+        }1
+        
+        if(name=="concealer"){
+            var rate=140;
+            var quantity=document.getElementById("name8").value;
+
+            var total = rate*quantity;
+            document.getElementById("print8").innerHTML=total; 
+        }
+
+        if(name=="clip"){
+            var rate=30;
+            var quantity=document.getElementById("name9").value;
+
+            var total = rate*quantity;
+            document.getElementById("print9").innerHTML=total; 
+        }
+        
+        if(name=="Sindhoor"){
+            var rate=10;
+            var quantity=document.getElementById("name10").value;
+
+            var total = rate*quantity;
+            document.getElementById("print10").innerHTML=total; 
+        }
+
+        if(name=="Primer"){
+            var rate=160;
+            var quantity=document.getElementById("name11").value;
+
+            var total = rate*quantity;
+            document.getElementById("print11").innerHTML=total; 
+        }
+
+        if(name=="Moisturiser"){
+            var rate=90;
+            var quantity=document.getElementById("name12").value;
+
+            var total = rate*quantity;
+            document.getElementById("print12").innerHTML=total; 
+        }
+
+        if(name=="Comb"){
+            var rate=40;
+            var quantity=document.getElementById("name13").value;
+
+            var total = rate*quantity;
+            document.getElementById("print13").innerHTML=total; 
+        }
+
+        if(name=="Perfume"){
+            var rate=210;
+            var quantity=document.getElementById("name14").value;
+
+            var total = rate*quantity;
+            document.getElementById("print14").innerHTML=total; 
+        }
+
+        if(name=="Lipliner"){
+            var rate=50;
+            var quantity=document.getElementById("name15").value;
+
+            var total = rate*quantity;
+            document.getElementById("print15").innerHTML=total; 
+        }
+
+        if(name=="Lipbalm"){
+            var rate=20;
+            var quantity=document.getElementById("name16").value;
+
+            var total = rate*quantity;
+            document.getElementById("print16").innerHTML=total; 
+        }
+        
+        if(name=="Highlighter"){
+            var rate=110;
+            var quantity=document.getElementById("name17").value;
+
+            var total = rate*quantity;
+            document.getElementById("print17").innerHTML=total; 
+        
+        }
+        if(name=="foundation"){
+            var rate=90;
+            var quantity =document.getElementById("name18").value;
+
+            var total = rate*quantity;
+            document.getElementById("print18").innerHTML=total;
+        }
+        
+        
+    }
+</script>
+
+<style>
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    button{
+        margin-left: 10px;
+
+    }
+    td{
+        border:solid;
+        border-color: black;
+    }
+    header{
+        font-size: 40px;
+        color: burlywood;
+        text-align: center;
+    }
+    table{
+        text-align: center;
+    }
+   td{
+       height: 300px
+   }
+</style>
+</head>
+<body>
+    <header>SHUBHA FASHIONS</header>
+    <table>
+<tr>
+    <td>
+        <img src="Nailpolish.jpg" alt="Nailpolish.jpg">  <br>
+    <button onclick="printMakeup('Nail-Polish')">Nail-Polish</button>
+    <input type="number" placeholder="Quantity" id="name1">
+    <p id="print1"></p>
+    </td>
+    <td>
+        <img src="foundation powder.jpg" alt="foundation powder.jpg"><br>
+    <button onclick="printMakeup('foundation powder')">foundation powder</button>
+    <input type="number" placeholder="Quantity" id="name2">
+    <p id="print2"></p>
+    </td>
+    <td>
+        <img src="Lipstick.jpg" alt="Lipstick.jpg"><br>
+    <button onclick="printMakeup('Lipstick')">Lipstick</button>
+    <input type="number" placeholder="Quantity" id="name3">
+    <p id="print3"></p>
+    </td>
+    <td>
+        
+        <img src="Kajal.jpg" alt="Kajal.jpg"><br>
+    <button onclick="printMakeup('Kajal')">Kajal</button>
+    <input type="number" placeholder="Quantity" id="name4">
+    <p id="print4"></p>
+</td>
+
+<td>
+    <img src="Eyeliner.jpg" alt="Eyeliner.jpg"><br>
+<button onclick="printMakeup('Eyeliner')">Eyeliner</button>
+<input type="number" placeholder="Quantity" id="name5">
+<p id="print5"></p>
+</td>
+<td>
+<img src="Bangles.jpg" alt="Bangles.jpg"><br>
+<button onclick="printMakeup('Bangles')">Bangles</button>
+<input type="number" placeholder="Quantity" id="name6">
+<p id="print6"></p>
+</td>
+</tr>
+
+
+<tr>
+    
+<td>
+    <img src="Necklace.jpg" alt="Necklace.jpg"><br>
+    <button onclick="printMakeup('Necklace')">Necklace</button>
+    <input type="number" placeholder="Quantity" id="name7">
+    <p id="print7"></p>
+</td>
+<td>
+    <img src="concealer.jpg" alt="concealer.jpg"><br>
+    <button onclick="printMakeup('concealer')">concealer</button>
+    <input type="number" placeholder="Quantity" id="name8">
+    <p id="print8"></p>
+
+</td>
+
+    <td>
+        <img src="clip.jpg" alt="clip.jpg"><br>
+    <button onclick="printMakeup('clip')">clip</button>
+    <input type="number" placeholder="Quantity" id="name9">
+    <p id="print9"></p>
+</td>
+<td>
+    <img src="Sindhoor.jpg" alt="Sindhoor.jpg"><br>
+    <button onclick="printMakeup('Sindhoor')">Sindhoor</button>
+    <input type="number" placeholder="Quantity" id="name10">
+    <p id="print10"></p>
+</td>
+<td>
+    <img src="Primer.jpg" alt="Primer.jpg"><br>
+    <button onclick="printMakeup('Primer')">Primer</button>
+    <input type="number" placeholder="Quantity" id="name11">
+    <p id="print11"></p>
+</td>
+<td>
+    <img src="Moisturiser.jpg" alt="Moisturiser.jpg"><br>
+    <button onclick="printMakeup('Moisturiser')">Moisturiser</button>
+    <input type="number" placeholder="Quantity" id="name12">
+    <p id="print12"></p>
+</td>
+</tr>
+
+
+
+<tr>
+    <td>
+        <img src="Comb.jpg" alt="Comb.jpg"><br>
+    <button onclick="printMakeup('Comb')">Comb</button>
+    <input type="number" placeholder="Quantity" id="name13">
+    <p id="print13"></p>
+</td>
+<td>
+    <img src="Perfume.jpg" alt="Perfume.jpg"><br>
+    <button onclick="printMakeup('Perfume')">Perfume</button>
+    <input type="number" placeholder="Quantity" id="name14">
+    <p id="print14"></p>
+</td>
+<td>
+    <img src="Lipliner.jpg" alt="Lipliner.jpg">
+    <button onclick="printMakeup('Lipliner')">Lipliner</button>
+    <input type="number" placeholder="Quantity" id="name15">
+    <p id="print15"></p>
+</td>
+<td>
+    <img src="Lipbalm.jpg" alt="Lipbalm.jpg">
+    <button onclick="printMakeup('Lipbalm')">Lipbalm</button>
+    <input type="number" placeholder="Quantity" id="name16">
+    <p id="print16"></p>
+</td>
+<td>
+    <img src="Highlighter.jpg" alt="Highlighter.jpg">
+    <button onclick="printMakeup('Highlighter')">Highlighter</button>
+    <input type="number" placeholder="Quantity" id="name17">
+    <p id="print17"></p>
+</td>
+<td>
+    <img src="foundation.jpg" alt="foundation.jpg">
+    <button onclick="printMakeup('foundation')">foundation</button>
+    <input type="number" placeholder="Quantity" id="name18">
+    <p id="print18"></p>
+</td>
+</tr>
+</table>
+</body>
+</html>
